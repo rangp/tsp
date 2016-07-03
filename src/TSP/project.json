@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0-rc3-004338"
+    },
+    "Newtonsoft.Json": "9.0.1-beta1",
+    "System.Collections.Concurrent": "4.0.12-rc3-24128-00",
+    "System.Collections.NonGeneric": "4.0.1-rc3-24128-00",
+    "System.Linq": "4.1.0-rc3-24128-00",
+    "System.Linq.Parallel": "4.0.1-rc3-24128-00"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
+}
