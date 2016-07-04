@@ -123,7 +123,7 @@ namespace TSP
 
         public static void Main(string[] args)
         {
-            var opt = new Optimization(sahara);
+            var opt = new Optimization(burma);
             var sol = opt.Optimize();
 
             Console.WriteLine(JsonConvert.SerializeObject(sol.Points));

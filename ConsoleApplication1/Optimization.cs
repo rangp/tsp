@@ -187,7 +187,7 @@ namespace TSP
                 {
                     var newSolutions = new ConcurrentDictionary<int, Polygon>();
 
-                   Parallel.ForEach(subSolutions[path.GetHashCode()], (subSolution) =>
+                   foreach(var subSolution in subSolutions[path.GetHashCode()])
                     {
                         if (subSolution.Value.Points.Count > 1)
                         {
@@ -212,7 +212,7 @@ namespace TSP
                             }
                         }
 
-                    });
+                    };
 
                     // Delete the fragments from the last round because they are incomplete anyway 
                     // And are overwritten above

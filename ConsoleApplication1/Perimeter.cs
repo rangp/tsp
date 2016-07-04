@@ -102,8 +102,12 @@ namespace TSP
                 i++;
             }
 
+            // If the minIndex is smaller than the maxIndex then the maxIndex has to be reduced
+            // by 1 because removing it will shorten the list by 1
+            maxIdx = minIdx < maxIdx ? maxIdx - 1 : maxIdx;
+
             pointList.RemoveAt(minIdx);
-            pointList.RemoveAt(maxIdx - 1);
+            pointList.RemoveAt(maxIdx);
 
             return new Perimeter(minPoint, maxPoint);
         }
