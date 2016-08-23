@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F965AB54-2BEF-4323-B36D-86B2318BF668}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSP", "ConsoleApplication1\TSP.csproj", "{1E8ECDDB-1AB3-46D3-921C-83122BD8C780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemGenerator", "ProblemGenerator\ProblemGenerator.csproj", "{EF5CBB5B-66A9-4673-AB4E-B37810FBFA6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,10 @@ Global
 		{1E8ECDDB-1AB3-46D3-921C-83122BD8C780}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E8ECDDB-1AB3-46D3-921C-83122BD8C780}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E8ECDDB-1AB3-46D3-921C-83122BD8C780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF5CBB5B-66A9-4673-AB4E-B37810FBFA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF5CBB5B-66A9-4673-AB4E-B37810FBFA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF5CBB5B-66A9-4673-AB4E-B37810FBFA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF5CBB5B-66A9-4673-AB4E-B37810FBFA6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
