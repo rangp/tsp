@@ -10,9 +10,9 @@ namespace TspSolver
     {
         public readonly double[,] Map;
 
-        public DistanceMap(List<Coordinate> coordinates)
+        public DistanceMap(Coordinate[] coordinates)
         {
-            Map = new double[coordinates.Count, coordinates.Count];
+            Map = new double[coordinates.Length, coordinates.Length];
 
             var i = 0;
             foreach(var co1 in coordinates)

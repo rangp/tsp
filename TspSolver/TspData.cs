@@ -19,7 +19,7 @@ namespace TspSolver
 
         public List<Coordinate> Solution { get; set; }
 
-        public int TotalLength { get; set; }
+        public double TotalLength { get; set; }
 
         public static TspData FromFile(FileStream file)
         {
@@ -32,13 +32,18 @@ namespace TspSolver
 
                 while ((line = reader.ReadLine()) != null)
                 {
+                    if (string.IsNullOrWhiteSpace(line))
+                    {
+                        continue;
+                    }
+
                     if(line == "#solution")
                     {
                         type = 1;
                     }
                     else if(line == "#total")
                     {
-                        tsp.TotalLength = int.Parse(reader.ReadLine());
+                        tsp.TotalLength = double.Parse(reader.ReadLine());
                     }
                     else
                     {
